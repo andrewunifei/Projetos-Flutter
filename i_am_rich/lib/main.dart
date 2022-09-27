@@ -11,7 +11,7 @@ void main() {
         backgroundColor: Colors.purple[100],
         body: const Center(
           child: Image(
-            image: NetworkImage('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'),
+            image: AssetImage('images/diamond.png'),
           ),
         ),
       ), // Esqueleto
