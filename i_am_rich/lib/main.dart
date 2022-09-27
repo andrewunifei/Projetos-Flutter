@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
-      home: Scaffold(
+      home: Scaffold( // Esqueleto
         appBar: AppBar(
           title: const Text("Eu sou rico"),
           backgroundColor: Colors.purple[700],
@@ -14,7 +14,7 @@ void main() {
             image: AssetImage('images/diamond.png'),
           ),
         ),
-      ), // Esqueleto
+      ),
     ),
   );
 }
