@@ -37,57 +37,45 @@ class MyApp extends StatelessWidget {
                     color: Colors.blueGrey[800],
                 ),
               ),
-              Column(
-                  children: [
-                    Container(
-                      color: Colors.white,
-                      margin: EdgeInsets.symmetric(vertical: 20, horizontal: 25),
-                      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
-                      child: Row(
-                        children: [
-                          Icon(
-                              Icons.phone,
-                              color: Colors.teal
-                          ),
-                          SizedBox(
-                            width: 10.0,
-                          ),
-                          Text(
-                              '+55 99 9 9999-9999',
-                              style: TextStyle(
-                                color: Colors.blueGrey[900],
-                                fontFamily: 'SourceSansPro',
-                                fontSize: 20.0,
-                              )
-                          )
-                        ],
-                      ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 20, horizontal: 25),
+                child: Padding(
+                  padding: EdgeInsets.all(5),
+                  child: ListTile(
+                    leading: Icon(
+                        Icons.phone,
+                        color: Colors.teal
                     ),
-                    Container(
-                      color: Colors.white,
-                      margin: EdgeInsets.symmetric(vertical: 0, horizontal: 25),
-                      padding: EdgeInsets.symmetric(vertical:10, horizontal: 15),
-                      child: Row(
-                        children: [
-                          Icon(
-                            Icons.mail,
-                            color: Colors.teal
-                          ),
-                          SizedBox(
-                            width: 10.0
-                          ),
-                          Text(
-                            'andrewunifei@gmail.com',
-                            style: TextStyle(
-                              color: Colors.blueGrey[900],
-                              fontFamily: 'SourceSansPro',
-                              fontSize: 20.0
-                            )
-                          )
-                        ],
-                      )
+                    title: Text(
+                        '+55 9 9999-9999',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontFamily: 'SourceSansPro'
+                        )
                     )
-                  ],
+                  ),
+                )
+              ),
+              Card(
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(vertical: 0, horizontal: 25),
+                  child: Padding(
+                    padding: EdgeInsets.all(5),
+                    child: ListTile(
+                      leading: Icon(
+                        Icons.mail,
+                        color: Colors.teal
+                      ),
+                      title: Text(
+                          'andrewunifei@gmail.com',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: 'SourceSansPro'
+                          )
+                      )
+                    ),
+                  ),
               ),
             ],
           ),
