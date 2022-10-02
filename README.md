@@ -15,7 +15,7 @@ O projeto dessa sessão é uma parodia do aplicativo "I am rich":
 ## Projeto "Mi card" (Sessão 6)
 [Link do projeto nesse repositório](https://github.com/andrewunifei/Projetos-Flutter/tree/main/mi_card_flutter)
 
-Os principais _widgets_ apresentados nessa sessão são: _Container_, _Column_, _Row_, _SafeArea_, _card_ e _listTile_. Além disso, aprendemos como manipulá-los.
+Os principais _widgets_ apresentados nessa sessão são: _Container_, _Column_, _Row_, _SafeArea_, _Card_ e _ListTile_. Além disso, aprendemos como manipulá-los.
 
 O projeto dessa sessão é um cartão de apresentação:
 
