@@ -6,7 +6,7 @@ Nessa sessão são apresentadas a função _main()_ do Dart e a função _Scaffo
 
 O projeto dessa sessão é uma parodia do aplicativo "I am rich":
 
-<img src="https://github.com/andrewunifei/Projetos-Flutter/blob/main/Recursos/I%20am%20rich.png" alt="drawing" width="300"/>
+<img src="" alt="drawing" width="300"/>
 
 ## Projeto Dicee (Sessão 7)
 
