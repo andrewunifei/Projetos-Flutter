@@ -32,3 +32,38 @@ Nessa sessão são apresentados alguns mecanismos da linguagem Dart: funções, 
 A ideia do projeto dessa sessão é construir uma interface onde o usuário interage com dois dados. Quando um dos dados é tocado, gera-se valores aleatórios para ambos:
 
 ![Dicee](https://media.giphy.com/media/W9W37ADGMYaMvm1vPl/giphy.gif)
+
+<hr>
+
+## Projeto "Magic 8 ball" (Sessão 8)
+[Link do projeto nesse repositório](https://github.com/andrewunifei/Projetos-Flutter/tree/main/magic-8-ball-flutter)
+
+Essa sessão é um reforço, o projeto desenvolvido aqui aplica os mesmos conceitos da sessão anterior. A ideia é um app que responde perguntas:
+
+![Magic 8 ball](https://media.giphy.com/media/txO9HxVmJxMZY8uB6a/giphy.gif)
+
+<hr>
+
+## Projeto "Xylophone" (Sessão 9)
+[Link do projeto nesse repositório](https://github.com/andrewunifei/Projetos-Flutter/tree/main/xylophone-flutter)
+
+Nessa sessão a ideia de importar bibliotecas é aprofundada. Exploramos o site [pub.dev](https://pub.dev/) para encontrar pacotes e documentações. Além disso, vimos retornos e parâmetros de funções não convencionais em outras linguagens de programação, como o retorno _Widget_ e o parâmetro _MaterialColor_, ambos característicos do Flutter. Um exemplo de função nesse proejto que faz uso desses conceitos:
+
+```dart
+Widget buildkey(String track, MaterialColor color){
+    return Expanded(
+      child: Container(
+        color: color,
+        child: TextButton(
+          onPressed: (){
+            this.playNote(track);
+          },
+        ),
+      ),
+    );
+  }
+```
+
+A ideia do projeto é a construção de um xilofone utilizando os métodos da biblioteca [audioplayers](https://pub.dev/packages/audioplayers) para integrar efeitos sons manipulando arquivos de áudio. Cada botão do aplicativo toca um som diferente. Infelizmente não é possível reproduzir os áudios nesse documento. O app:
+
+![Xylophone](https://media.giphy.com/media/SeiQA4arIvgVr3KIB4/giphy.gif)
