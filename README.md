@@ -64,6 +64,6 @@ Widget buildkey(String track, MaterialColor color){
   }
 ```
 
-A ideia do projeto é a construção de um xilofone utilizando os métodos da biblioteca [audioplayers](https://pub.dev/packages/audioplayers) para integrar efeitos sons manipulando arquivos de áudio. Cada botão do aplicativo toca um som diferente. Infelizmente não é possível reproduzir os áudios nesse documento. O app:
+A ideia do projeto é a construção de um xilofone utilizando os métodos da biblioteca [audioplayers](https://pub.dev/packages/audioplayers) para integrar efeitos sonoros manipulando arquivos de áudio. Cada botão do aplicativo toca um som diferente. Infelizmente não é possível reproduzir os áudios nesse documento. O app:
 
 ![Xylophone](https://media.giphy.com/media/SeiQA4arIvgVr3KIB4/giphy.gif)
