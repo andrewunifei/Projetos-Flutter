@@ -67,3 +67,16 @@ Widget buildkey(String track, MaterialColor color){
 A ideia do projeto é a construção de um xilofone utilizando os métodos da biblioteca [audioplayers](https://pub.dev/packages/audioplayers) para integrar efeitos sonoros manipulando arquivos de áudio. Cada botão do aplicativo toca um som diferente. Infelizmente não é possível reproduzir os áudios nesse documento. O app:
 
 ![Xylophone](https://media.giphy.com/media/SeiQA4arIvgVr3KIB4/giphy.gif)
+
+## Projeto "Quizzler" (Sessão 10)
+
+![Quizzler](https://media.giphy.com/media/gnf8ehdOnPblmbzaay/giphy.gif)
+
+## Projeto "Destini" (Sessão 11)
+[Link do projeto nesse repositório](https://github.com/andrewunifei/Projetos-Flutter/tree/main/destini-challenge-starting)
+
+Esse projeto visa reforçar os conceitos aprendido na sessão anterior.
+
+A ideia do projeto é um aplicativo de escolha de decisões e as consequências dentro de uma história:
+
+![Destini](https://media.giphy.com/media/PRhSYudLSSoma2uP8S/giphy.gif)
