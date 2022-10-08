@@ -75,7 +75,7 @@ A ideia do projeto é a construção de um xilofone utilizando os métodos da bi
 ## Projeto "Destini" (Sessão 11)
 [Link do projeto nesse repositório](https://github.com/andrewunifei/Projetos-Flutter/tree/main/destini-challenge-starting)
 
-Esse projeto visa reforçar os conceitos aprendido na sessão anterior.
+Esse projeto visa reforçar os conceitos aprendidos na sessão anterior.
 
 A ideia do projeto é um aplicativo de escolha de decisões e as consequências dentro de uma história:
 
