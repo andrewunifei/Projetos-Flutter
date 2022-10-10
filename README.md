@@ -70,6 +70,10 @@ A ideia do projeto é a construção de um xilofone utilizando os métodos da bi
 
 ## Projeto "Quizzler" (Sessão 10)
 
+Nessa sessão foi explorado o conceito de orientação a objetos na linguagem Dart. O projeto utilizou de objetos para realizar comunicações entre diferentes componentes do código e para armanezar informações.
+
+A ideia do projeto é um aplicativo de perguntas e respostas:
+
 ![Quizzler](https://media.giphy.com/media/gnf8ehdOnPblmbzaay/giphy.gif)
 
 ## Projeto "Destini" (Sessão 11)
