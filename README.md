@@ -2,7 +2,7 @@
 Repositório para manter os projetos feitos com Flutter no curso [The Complete 2021 Flutter Development Bootcamp with Dart (Udemy)](https://www.udemy.com/course/flutter-bootcamp-with-dart/).
 
 ## Índice
-- [Projeto 1 - I am rich](#projeto-1-i-am-rich)
+- [Projeto 1 - I am rich](#projeto-1---i-am-rich)
 - [Projeto 2 - Mi card](#projeto-2---mi-card)
 - [Projeto 3 - Dicee](#projeto-3---dicee)
 - [Projeto 4 - Magic 8 ball](#projeto-4---magic-8-ball)
