@@ -4,9 +4,13 @@ import 'reusable_card.dart';
 import 'reusable_card_content.dart';
 
 const reusableCardColor = Color(0xff1d1e33);
-
 const bottomContainerHeight = 80.0;
 const bottomContainerColor = Color(0xffbe1555);
+const iconSize = 80.0;
+const labelTextStyle = TextStyle(
+  fontSize: 18.0,
+  color: Color(0xff8d8e98),
+);
 
 class InputPage extends StatefulWidget {
   @override
@@ -32,13 +36,10 @@ class _InputPageState extends State<InputPage> {
                       cardChild: ReusableCardContent(
                         contentIcon: Icon(
                           FontAwesomeIcons.mars,
-                          size: 80.0
+                          size: iconSize,
                         ),
                         contentText: Text('MALE',
-                            style: TextStyle(
-                                fontSize: 18.0,
-                                color: Color(0xff8d8e98)
-                            )
+                            style: labelTextStyle,
                         ),
                       ),
                     ),
@@ -49,13 +50,10 @@ class _InputPageState extends State<InputPage> {
                       cardChild: ReusableCardContent(
                         contentIcon: Icon(
                               FontAwesomeIcons.venus,
-                              size: 80.0,
+                              size: iconSize,
                         ),
                         contentText: Text('FEMALE',
-                            style: TextStyle(
-                                fontSize: 18.0,
-                                color: Color(0xff8d8e98),
-                            ),
+                            style: labelTextStyle,
                         ),
                       )
                     ),
