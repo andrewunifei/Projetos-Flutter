@@ -84,3 +84,10 @@ Esse projeto visa reforçar os conceitos aprendidos na sessão anterior.
 A ideia do projeto é um aplicativo de escolha de decisões e as consequências dentro de uma história:
 
 ![Destini](https://media.giphy.com/media/PRhSYudLSSoma2uP8S/giphy.gif)
+
+## Projeto "BMI Calculator" (Sessão 12)
+[Link do projeto nesse repositório](https://github.com/andrewunifei/Projetos-Flutter/tree/main/bmi-calculator-flutter)
+
+Nessa sessão, primeiramente, aprendemos como construir temas personalizados no Flutter que serão refletidos em todas as páginas do aplicativo (por exemplo: cores e fonte).
+
+A ideia do projeto é um aplicativo de calculadora de BMI (Índice de massa corporal). A interface é inspirada no [design](https://dribbble.com/shots/4585382-Simple-BMI-Calculator) do Ruben Vaalt.
