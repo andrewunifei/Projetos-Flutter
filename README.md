@@ -103,6 +103,6 @@ Nessa sessão, os principais e novos conceitos apresentados foram:
 - Construção de temas personalizados no Flutter que serão refletidos em todas as páginas do aplicativo (por exemplo: cores e fonte).
 - Refatoração de *widget*, isto significa encapsular a lógica de *widgets* personalizados em uma classe a fim de reutilizar o *widget* em várias partes diferentes do código.
 - Diferença entre as *key words* *final* e *const*  
-- Adicionar conteúdo a "*widgets* personalizdos" através de *widget* filho.
+- Adicionar conteúdo a "*widgets* personalizados" através de *widget* filho.
 
 A ideia do projeto é um aplicativo de calculadora de BMI (Índice de massa corporal). A interface é inspirada no [design](https://dribbble.com/shots/4585382-Simple-BMI-Calculator) do Ruben Vaalt.
