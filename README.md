@@ -105,4 +105,4 @@ Nessa sessão, os principais e novos conceitos apresentados foram:
 - Diferença entre as *key words* *final* e *const*  
 - Adicionar conteúdo a "*widgets* personalizados" através de *widget* filho.
 
-A ideia do projeto é um aplicativo de calculadora de BMI (Índice de massa corporal). A interface é inspirada no [design](https://dribbble.com/shots/4585382-Simple-BMI-Calculator) do Ruben Vaalt.
+A ideia do projeto é um aplicativo de calculadora de BMI (Índice de massa corporal). A interface é inspirada no [design do Ruben Vaalt](https://dribbble.com/shots/4585382-Simple-BMI-Calculator).
