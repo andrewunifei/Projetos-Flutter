@@ -1,7 +1,11 @@
 # Projetos-Flutter
 Repositório para manter os projetos feitos com Flutter no curso [The Complete 2021 Flutter Development Bootcamp with Dart (Udemy)](https://www.udemy.com/course/flutter-bootcamp-with-dart/).
 
-## Projeto "I am rich" (Sessão 3)
+## Índice
+- [Projeto 1](#projeto-i-am-rich)
+- [Projeto 2](#projeto---mi-card)
+
+## Projeto - I am rich
 [Link do projeto nesse repositório](https://github.com/andrewunifei/Projetos-Flutter/tree/main/i_am_rich)
 
 Nessa sessão são apresentadas a função _main()_ do Dart e a função _Scaffold()_ e suas principais propriedades que agem como um esqueleto de um aplicativo Flutter.
@@ -12,7 +16,7 @@ O projeto dessa sessão é uma parodia do aplicativo "I am rich":
 
 <hr>
 
-## Projeto "Mi card" (Sessão 6)
+## Projeto - Mi card
 [Link do projeto nesse repositório](https://github.com/andrewunifei/Projetos-Flutter/tree/main/mi_card_flutter)
 
 Os principais _widgets_ apresentados nessa sessão são: _Container_, _Column_, _Row_, _SafeArea_, _Card_ e _ListTile_. Também aprendemos como manipulá-los. Além disso, aprendemos como adicionar novas fontes e imagens para um projeto Flutter.
