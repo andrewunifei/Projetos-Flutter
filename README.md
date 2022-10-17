@@ -98,6 +98,6 @@ A ideia do projeto é um aplicativo de escolha de decisões e as consequências 
 ## Projeto 8 - BMI Calculator
 [Link do projeto nesse repositório](https://github.com/andrewunifei/Projetos-Flutter/tree/main/bmi-calculator-flutter)
 
-Nessa sessão, primeiramente, aprendemos como construir temas personalizados no Flutter que serão refletidos em todas as páginas do aplicativo (por exemplo: cores e fonte).
+Nessa sessão, primeiramente, aprendemos como construir temas personalizados no Flutter que serão refletidos em todas as páginas do aplicativo (por exemplo: cores e fonte). Depois foi apresentado o conceito de refatoração de *widget*, isto significa encapsular a lógica de *widgets* personalizados em uma classe a fim de reutilizar o *widget* em várias partes diferentes do código.  
 
 A ideia do projeto é um aplicativo de calculadora de BMI (Índice de massa corporal). A interface é inspirada no [design](https://dribbble.com/shots/4585382-Simple-BMI-Calculator) do Ruben Vaalt.
