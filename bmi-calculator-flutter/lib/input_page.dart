@@ -49,7 +49,6 @@ class _InputPageState extends State<InputPage> {
               margin: EdgeInsets.all(15),
             )),
             Expanded(
-              flex: 1,
               child: Row(
                 children: [
                   Expanded(
