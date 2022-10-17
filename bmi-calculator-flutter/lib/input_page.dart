@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 const reusableCardColor = Color(0xff1d1e33);
 
@@ -24,25 +25,59 @@ class _InputPageState extends State<InputPage> {
               child: Row(
                 children: [
                   Expanded(
-                    child: ReusableCard(reusableCardColor),
+                    child: ReusableCard(
+                      cardColor: reusableCardColor,
+                      cardChild: ReusableCardContent(
+                        contentIcon: Icon(
+                          FontAwesomeIcons.mars,
+                          size: 80.0
+                        ),
+                        contentText: Text('MALE',
+                            style: TextStyle(
+                                fontSize: 18.0,
+                                color: Color(0xff8d8e98)
+                            )
+                        ),
+                      ),
+                    ),
                   ),
                   Expanded(
-                    child: ReusableCard(reusableCardColor),
+                    child: ReusableCard(
+                      cardColor: reusableCardColor,
+                      cardChild: ReusableCardContent(
+                        contentIcon: Icon(
+                              FontAwesomeIcons.venus,
+                              size: 80.0,
+                        ),
+                        contentText: Text('FEMALE',
+                            style: TextStyle(
+                                fontSize: 18.0,
+                                color: Color(0xff8d8e98),
+                            ),
+                        ),
+                      )
+                    ),
                   )
                 ],
               ),
             ),
             Expanded(
-                child: ReusableCard(reusableCardColor),
+                child: ReusableCard(
+                    cardColor: reusableCardColor
+                ),
             ),
             Expanded(
               child: Row(
                 children: [
                   Expanded(
-                      child: ReusableCard(reusableCardColor),
+                      child: ReusableCard(
+                          cardColor: reusableCardColor
+                      ),
                   ),
                   Expanded(
-                      child: ReusableCard(reusableCardColor),
+                      child: ReusableCard(
+                          cardColor: reusableCardColor
+                      ),
                   ),
                 ],
               ),
@@ -56,6 +91,27 @@ class _InputPageState extends State<InputPage> {
           ],
         ),
       ),
+    );
+  }
+}
+
+class ReusableCardContent extends StatelessWidget {
+  ReusableCardContent({this.contentIcon, this.contentText});
+
+  final Icon contentIcon;
+  final Text contentText;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        contentIcon,
+        SizedBox(
+          height: 15,
+        ),
+        contentText,
+      ],
     );
   }
 }
