@@ -102,10 +102,10 @@ Nessa sessão, os principais e novos conceitos apresentados foram:
 
 - Construção de temas personalizados no Flutter que serão refletidos em todas as páginas do aplicativo (por exemplo: cores e fonte).
 - Refatoração de *widget*, isto significa encapsular a lógica de *widgets* personalizados em uma classe a fim de reutilizar o *widget* em várias partes diferentes do código.
-- Diferença entre as *key words* *final* e *const*  
+- Diferença entre as *key words* *final* e *const* . 
 - Adicionar conteúdo a "*widgets* personalizados" através de *widget* filho.
-- *Widget GestureDetector* 
-- Funções Dart como objetos de primeira classe (as funções suportam todas as operações disponível para objetos de primeira classe)
-- *copyWith*
+- *Widget GestureDetector()*. 
+- Funções Dart como objetos de primeira classe (as funções suportam todas as operações disponível para objetos de primeira classe).
+- *copyWith()* - Permite personalizar um *widget* de forma mais minuciosa.
 
 A ideia do projeto é um aplicativo de calculadora de BMI (Índice de massa corporal). A interface é inspirada no [design do Ruben Vaalt](https://dribbble.com/shots/4585382-Simple-BMI-Calculator).
