@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'reusable_card.dart';
 import 'reusable_card_content.dart';
 import 'constants.dart';
+import 'plusMinusButtons.dart';
 
 enum Gender {
   male,
@@ -17,6 +18,8 @@ class InputPage extends StatefulWidget {
 class _InputPageState extends State<InputPage> {
   Gender selectedGender;
   int height = 180;
+  int weight = 60;
+  int age = 18;
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +41,7 @@ class _InputPageState extends State<InputPage> {
                           selectedGender = Gender.male;
                         });
                       },
-                      cardColor: selectedGender == Gender.male ? kActiveColor : kReusableCardColor,
+                      cardColor: selectedGender == Gender.male ? kActiveColor : kSexCardColor,
                       cardChild: ReusableCardContent(
                         contentIcon: Icon(
                           FontAwesomeIcons.mars,
@@ -57,7 +60,7 @@ class _InputPageState extends State<InputPage> {
                           selectedGender = Gender.female;
                         });
                       },
-                      cardColor: selectedGender == Gender.female ? kActiveColor : kReusableCardColor,
+                      cardColor: selectedGender == Gender.female ? kActiveColor : kSexCardColor,
                       cardChild: ReusableCardContent(
                         contentIcon: Icon(
                               FontAwesomeIcons.venus,
@@ -80,7 +83,7 @@ class _InputPageState extends State<InputPage> {
                     children: [
                       Text(
                           'HEIGHT',
-                          style: kMiddleTextStyle
+                          style: kLabelTextStyle,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -93,8 +96,8 @@ class _InputPageState extends State<InputPage> {
                           ),
                           Text(
                             'cm',
-                            style: kMiddleTextStyle,
-                          )
+                            style: kLabelTextStyle,
+                          ),
                         ],
                       ),
                       SliderTheme(
@@ -130,19 +133,53 @@ class _InputPageState extends State<InputPage> {
                 children: [
                   Expanded(
                       child: ReusableCard(
-                          cardColor: Colors.amber[700]
+                          cardColor: Color(0xff455a64),
+                          cardChild: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                'WEIGHT',
+                                style: kLabelTextStyle,
+                              ),
+                              Text(
+                                weight.toString(),
+                                style: kCardFontStyle,
+                              ),
+                              SizedBox(
+                                height: 10
+                              ),
+                              plusMinusButtons
+                            ],
+                          )
                       ),
                   ),
                   Expanded(
                       child: ReusableCard(
-                          cardColor: Colors.amber[700]
+                          cardColor: Color(0xff455a64),
+                          cardChild: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                'AGE',
+                                style: kLabelTextStyle,
+                              ),
+                              Text(
+                                age.toString(),
+                                style: kCardFontStyle,
+                              ),
+                              SizedBox(
+                                  height: 10
+                              ),
+                              plusMinusButtons
+                            ],
+                          )
                       ),
                   ),
                 ],
               ),
             ),
             Container(
-              color: kBottomContainerColor,
+              color: kSexCardColor,
               margin: EdgeInsets.only(top: 10),
               width: double.infinity,
               height: kBottomContainerHeight,

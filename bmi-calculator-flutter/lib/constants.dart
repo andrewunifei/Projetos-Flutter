@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-const kReusableCardColor = Color(0xff039be5);
-const kActiveColor = Color(0xff01579b);
+const kSexCardColor = Color(0xff8c9eff);
+const kActiveColor = Color(0xff5870cb);
 const kBottomContainerHeight = 80.0;
 const kBottomContainerColor = Color(0xffbe1555);
 const kIconSize = 80.0;
