@@ -3,7 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'reusable_card.dart';
 import 'reusable_card_content.dart';
 import 'constants.dart';
-import 'plusMinusButtons.dart';
+import 'RoundIconButton.dart';
 
 enum Gender {
   male,
@@ -148,7 +148,34 @@ class _InputPageState extends State<InputPage> {
                               SizedBox(
                                 height: 10
                               ),
-                              plusMinusButtons
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  RoundIconButton(
+                                    contentIcon: Icon(
+                                        FontAwesomeIcons.plus
+                                    ),
+                                    functionality: () {
+                                      setState(() {
+                                        weight++;
+                                      });
+                                    },
+                                  ),
+                                  SizedBox(
+                                    width: 10
+                                  ),
+                                  RoundIconButton(
+                                    contentIcon: Icon(
+                                        FontAwesomeIcons.minus
+                                    ),
+                                    functionality: () {
+                                      setState(() {
+                                        weight--;
+                                      });
+                                    }
+                                  )
+                                ],
+                              )
                             ],
                           )
                       ),
@@ -170,7 +197,34 @@ class _InputPageState extends State<InputPage> {
                               SizedBox(
                                   height: 10
                               ),
-                              plusMinusButtons
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  RoundIconButton(
+                                    contentIcon: Icon(
+                                        FontAwesomeIcons.plus
+                                    ),
+                                    functionality: () {
+                                      setState(() {
+                                        age++;
+                                      });
+                                    },
+                                  ),
+                                  SizedBox(
+                                      width: 10
+                                  ),
+                                  RoundIconButton(
+                                    contentIcon: Icon(
+                                        FontAwesomeIcons.minus
+                                    ),
+                                    functionality: () {
+                                      setState(() {
+                                        age--;
+                                      });
+                                    },
+                                  )
+                                ],
+                              )
                             ],
                           )
                       ),
