@@ -107,6 +107,6 @@ Nessa sessão, os principais e novos conceitos apresentados foram:
 - *Widget GestureDetector()*. 
 - Funções Dart como objetos de primeira classe (as funções suportam todas as operações disponível para objetos de primeira classe).
 - *copyWith()* - Permite herdar as características de um *widget* e possibilita uma personalização minuciosa.
-- Rotas
+- Rotas.
 
 A ideia do projeto é um aplicativo de calculadora de BMI (Índice de massa corporal). A interface é inspirada no [design do Ruben Vaalt](https://dribbble.com/shots/4585382-Simple-BMI-Calculator).
