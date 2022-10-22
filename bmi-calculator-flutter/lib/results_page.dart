@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'constants.dart';
+import 'reusable_card.dart';
+import 'bottomButton.dart';
 
 class ResultsPage extends StatelessWidget {
   @override
@@ -8,7 +11,57 @@ class ResultsPage extends StatelessWidget {
         title: Text('BMI CALCULATOR')
       ),
       body:
-        Text('Hello world!')
+        SafeArea(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Expanded(
+                child: Container(
+                  child: Text(
+                    'Your result',
+                    style: kTitleTextStyle
+                  ),
+                ),
+              ),
+              Expanded(
+                flex: 5,
+                child: ReusableCard(
+                  cardColor: Color(0xff455a64),
+                  cardChild: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Normal',
+                        style: kResultTextStyle
+                      ),
+                      Text(
+                        '18.3',
+                        style: kBMITextStyle
+                      ),
+                      Text(
+                        'Your BMI result is quite low, you should eat more!',
+                        textAlign: TextAlign.center,
+                        style: kBodyTextStyle
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              Expanded(
+                child: BottomButton(
+                  text: 'RE-CALCULATE',
+                  route: () {
+                    Navigator.pop(
+                        context
+                    );
+                  },
+                ),
+              ),
+            ],
+          ),
+        )
     );
   }
 }

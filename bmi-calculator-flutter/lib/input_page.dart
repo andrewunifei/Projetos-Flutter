@@ -5,6 +5,7 @@ import 'reusable_card_content.dart';
 import 'constants.dart';
 import 'RoundIconButton.dart';
 import 'results_page.dart';
+import 'bottomButton.dart';
 
 enum Gender {
   male,
@@ -42,7 +43,7 @@ class _InputPageState extends State<InputPage> {
                           selectedGender = Gender.male;
                         });
                       },
-                      cardColor: selectedGender == Gender.male ? kActiveColor : kSexCardColor,
+                      cardColor: selectedGender == Gender.male ? kActiveColor : kDefaultCardColor,
                       cardChild: ReusableCardContent(
                         contentIcon: Icon(
                           FontAwesomeIcons.mars,
@@ -61,7 +62,7 @@ class _InputPageState extends State<InputPage> {
                           selectedGender = Gender.female;
                         });
                       },
-                      cardColor: selectedGender == Gender.female ? kActiveColor : kSexCardColor,
+                      cardColor: selectedGender == Gender.female ? kActiveColor : kDefaultCardColor,
                       cardChild: ReusableCardContent(
                         contentIcon: Icon(
                               FontAwesomeIcons.venus,
@@ -233,31 +234,14 @@ class _InputPageState extends State<InputPage> {
                 ],
               ),
             ),
-            Container(
-              margin: EdgeInsets.only(top: 10),
-              child: InkWell(
-                onTap: (){
-                  Navigator.push(
+            BottomButton(
+              text: 'CALCULATE',
+              route: () {
+                Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => ResultsPage())
-                  );
-                },
-                child: Ink(
-                  color: kSexCardColor,
-                  width: double.infinity,
-                  height: kBottomContainerHeight,
-                  child: Container(
-                    alignment: Alignment.center,
-                    child: Text(
-                      'CALCULATE',
-                      style: TextStyle(
-                          fontSize: 25.0,
-                          fontWeight: FontWeight.w600
-                      ),
-                    ),
-                  ),
-                ),
-              ),
+                );
+              }
             ),
           ],
         ),
