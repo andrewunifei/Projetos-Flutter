@@ -4,6 +4,11 @@ import '../components/reusable_card.dart';
 import '../components/bottomButton.dart';
 
 class ResultsPage extends StatelessWidget {
+
+  ResultsPage({@required this.data});
+
+  final Map data;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,17 +39,24 @@ class ResultsPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
-                        'Normal',
-                        style: kResultTextStyle
+                        data['status'],
+                        style: TextStyle(
+                            color: data['color'],
+                            fontSize: 22.0,
+                            fontWeight: FontWeight.bold
+                        )
                       ),
                       Text(
-                        '18.3',
+                        data['bmi'],
                         style: kBMITextStyle
                       ),
-                      Text(
-                        'Your BMI result is quite low, you should eat more!',
-                        textAlign: TextAlign.center,
-                        style: kBodyTextStyle
+                      Padding(
+                        padding: EdgeInsets.all(5),
+                        child: Text(
+                          data['interpretation'],
+                          textAlign: TextAlign.center,
+                          style: kBodyTextStyle
+                        ),
                       )
                     ],
                   ),
@@ -53,7 +65,7 @@ class ResultsPage extends StatelessWidget {
               Expanded(
                 child: BottomButton(
                   text: 'RE-CALCULATE',
-                  route: () {
+                  onTap: () {
                     Navigator.pop(
                         context
                     );

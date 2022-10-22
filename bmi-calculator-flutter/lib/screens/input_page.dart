@@ -6,6 +6,7 @@ import '../components/reusable_card_content.dart';
 import '../constants.dart';
 import '../components/roundIconButton.dart';
 import '../components/bottomButton.dart';
+import '../brain.dart';
 
 enum Gender {
   male,
@@ -236,10 +237,19 @@ class _InputPageState extends State<InputPage> {
             ),
             BottomButton(
               text: 'CALCULATE',
-              route: () {
+              onTap: () {
+                Brain brain = Brain(
+                  height: height,
+                  weight: weight
+                );
+
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => ResultsPage())
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ResultsPage(
+                      data: brain.getResults(),
+                    ),
+                  ),
                 );
               }
             ),

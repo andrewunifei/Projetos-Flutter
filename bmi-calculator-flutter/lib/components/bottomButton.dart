@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 
 class BottomButton extends StatelessWidget {
-  BottomButton({@required this.route, this.text});
+  BottomButton({@required this.onTap, this.text});
 
-  final Function route;
+  final Function onTap;
   final String text;
 
   @override
@@ -12,7 +12,7 @@ class BottomButton extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(top: 10),
       child: InkWell(
-        onTap: route,
+        onTap: onTap,
         child: Ink(
           color: kDefaultCardColor,
           width: double.infinity,
