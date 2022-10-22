@@ -110,3 +110,5 @@ Nessa sessão, os principais e novos conceitos apresentados foram:
 - Rotas.
 
 A ideia do projeto é um aplicativo de calculadora de BMI (Índice de massa corporal). A interface é inspirada no [design do Ruben Vaalt](https://dribbble.com/shots/4585382-Simple-BMI-Calculator).
+
+![BMI](https://media.giphy.com/media/R9BDq28ekqHlwf3QEm/giphy.gif)
