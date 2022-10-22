@@ -18,7 +18,7 @@ class Brain{
 
     if(_bmi >= 25){
       data = {
-        'status': 'Overweight',
+        'status': 'OVERWEIGHT',
         'interpretation': 'You have a higher than normal body weight. Try to exercise more.',
         'color': Color(0xffff0000),
         'bmi': _bmi.toStringAsFixed(1)
@@ -28,7 +28,7 @@ class Brain{
     }
     else if(_bmi > 18.5){
       data = {
-        'status': 'Normal',
+        'status': 'NORMAL',
         'interpretation': 'You have a normal body weight. Good job!',
         'color': Color(0xff24d876),
         'bmi': _bmi.toStringAsFixed(1)
@@ -38,7 +38,7 @@ class Brain{
     }
     else{
       data = {
-        'status': 'Underweight',
+        'status': 'UNDERWEIGHT',
         'interpretation': 'You have a lower than normal body weight. You can eat a bit more.',
         'color': Color(0xffff0000),
         'bmi': _bmi.toStringAsFixed(1)
