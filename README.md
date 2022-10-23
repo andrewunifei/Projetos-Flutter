@@ -121,3 +121,4 @@ Nesse projeto exploramos localização do dispositivo mobile e comunicação com
 
 - A biblioteca [geolocator](https://pub.dev/packages/geolocator) foi usada para obter acesso à localização do dispositivo (Android ou iOS).
 - Aprendemos solicitar permissões para o usuário.
+- Ciclo de vida do **widget**.
