@@ -10,6 +10,7 @@ Repositório para manter os projetos feitos com Flutter no curso [The Complete 2
 - [Projeto 6 - Quizzler](#projeto-6---Quizzler)
 - [Projeto 7 - Destini](#projeto-7---destini)
 - [Projeto 8 - BMI Calculator](#projeto-8---bmi-calculator)
+- [Projeto 9 - Clima](#projeto-9---clima)
 
 ## Projeto 1 - I am rich
 [Link do projeto nesse repositório](https://github.com/andrewunifei/Projetos-Flutter/tree/main/i_am_rich)
@@ -112,3 +113,8 @@ Nessa sessão, os principais e novos conceitos apresentados foram:
 A ideia do projeto é um aplicativo de calculadora de BMI (Índice de massa corporal). A interface é inspirada no [design do Ruben Vaalt](https://dribbble.com/shots/4585382-Simple-BMI-Calculator).
 
 ![BMI](https://media.giphy.com/media/R9BDq28ekqHlwf3QEm/giphy.gif)
+
+## Projeto 9 - Clima
+[Link do projeto nesse repositório](https://github.com/andrewunifei/Projetos-Flutter/tree/main/clima-flutter)
+
+Nesse projeto exploramos comunicação com fontes externas de dados.
