@@ -117,7 +117,7 @@ A ideia do projeto é um aplicativo de calculadora de BMI (Índice de massa corp
 ## Projeto 9 - Clima
 [Link do projeto nesse repositório](https://github.com/andrewunifei/Projetos-Flutter/tree/main/clima-flutter)
 
-Nesse projeto exploramos localização do dispositivo mobile e comunicação com fontes externas de dados.
+Nesse projeto exploramos como obter a localização do dispositivo mobile e comunicação com fontes externas de dados.
 
 - A biblioteca [geolocator](https://pub.dev/packages/geolocator) foi usada para obter acesso à localização do dispositivo (Android ou iOS).
 - Aprendemos solicitar permissões para o usuário.
