@@ -123,5 +123,3 @@ Nesse projeto exploramos como obter a localização do dispositivo mobile e comu
 - Aprendemos solicitar permissões para o usuário.
 - Ciclo de vida do *widget* - ```void initState()``` ```Widget build(BuildContext context)``` e ```void deactivate()```
 - Lidando com erros usando ```try{}``` e ```catch{}```
-
-- [Projeto 4 - Magic 8 ball](#projeto-4---magic-8-ball)
