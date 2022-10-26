@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import '../services/location.dart';
-import 'package:http/http.dart' as htpp;
+import '../services/networking.dart';
 import '../utilities/constants.dart';
-import 'dart:convert';
+import 'location_screen.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class LoadingScreen extends StatefulWidget {
   @override
@@ -11,35 +12,36 @@ class LoadingScreen extends StatefulWidget {
 
 class _LoadingScreenState extends State<LoadingScreen> {
 
-  void getLocation() async {
+  double longitude;
+  double latitude;
+
+  Future<void> getData() async {
     try {
       Location location = Location();
       await location.getCurrentPosition();
 
-      this.getData(location.longitude, location.latitude);
+      this.longitude = location.longitude;
+      this.latitude = location.latitude;
+
+      ExternalConnection connection = ExternalConnection(
+          url: 'https://api.openweathermap.org/data/2.5/weather?lat=${this.latitude}&lon=${this.longitude}&appid=${kAPIKey}'
+      );
+
+      Map <String, dynamic> parsed = await connection.getData();
+
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => LocationScreen())
+      );
+      // if(parsed['statusCode'] == 200) {
+      //
+      // }
+      // else{
+      //   print(parsed['statusCode']);
+      // }
     }
     catch(e) {
       print(e);
-    }
-  }
-
-  void getData(double longitude, double latitude) async {
-    htpp.Response res = await htpp.get(Uri.parse('https://api.openweathermap.org/data/2.5/weather?lat=$latitude&lon=$longitude&appid=$kAPIKey'));
-    int statusCode = res.statusCode;
-
-    if(statusCode == 200) {
-      final Map<String, dynamic> parsed = jsonDecode(res.body);
-
-      double temp = parsed['main']['temp'];
-      int condition = parsed['weather'][0]['id'];
-      String cityName = parsed['name'];
-
-      print(temp);
-      print(condition);
-      print(cityName);
-    }
-    else{
-      print(statusCode);
     }
   }
 
@@ -47,11 +49,18 @@ class _LoadingScreenState extends State<LoadingScreen> {
   void initState() {
     super.initState();
 
-    getLocation();
+    getData();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Center(
+          child: SpinKitSpinningLines(
+            color: Colors.white,
+            size: 50.0,
+          ),
+        ),
+      );
   }
 }
