@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:geolocator/geolocator.dart';
+import '../services/location.dart';
+import 'package:http/http.dart' as htpp;
+import '../utilities/constants.dart';
+import 'dart:convert';
 
 class LoadingScreen extends StatefulWidget {
   @override
@@ -10,12 +13,33 @@ class _LoadingScreenState extends State<LoadingScreen> {
 
   void getLocation() async {
     try {
-      await Geolocator.requestPermission();
-      Position position = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.low);
-      print(position);
+      Location location = Location();
+      await location.getCurrentPosition();
+
+      this.getData(location.longitude, location.latitude);
     }
     catch(e) {
-      print(e)
+      print(e);
+    }
+  }
+
+  void getData(double longitude, double latitude) async {
+    htpp.Response res = await htpp.get(Uri.parse('https://api.openweathermap.org/data/2.5/weather?lat=$latitude&lon=$longitude&appid=$kAPIKey'));
+    int statusCode = res.statusCode;
+
+    if(statusCode == 200) {
+      final Map<String, dynamic> parsed = jsonDecode(res.body);
+
+      double temp = parsed['main']['temp'];
+      int condition = parsed['weather'][0]['id'];
+      String cityName = parsed['name'];
+
+      print(temp);
+      print(condition);
+      print(cityName);
+    }
+    else{
+      print(statusCode);
     }
   }
 
