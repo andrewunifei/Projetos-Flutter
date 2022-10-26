@@ -31,6 +31,14 @@ class _LocationScreenState extends State<LocationScreen> {
 
   void updateUI(Map<String, dynamic> weatherData){
     setState(() {
+      if(weatherData == null){
+        this,temperature = 0;
+        this.icon = 'Error';
+        this.message = 'Unable to ger weather data';
+        this.cityName = '';
+
+        return;
+      }
       double temp = weatherData['main']['temp'];
       this.temperature = temp.toInt();
       this.condition = weatherData['weather'][0]['id'];
@@ -62,7 +70,11 @@ class _LocationScreenState extends State<LocationScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () async {
+                      Map<String, dynamic> weatherData = await model.getLocationWeather();
+
+                      updateUI(weatherData);
+                    },
                     child: Icon(
                       Icons.near_me,
                       size: 50.0,
