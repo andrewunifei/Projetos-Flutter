@@ -9,7 +9,7 @@ class ExternalConnection {
   Future<Map<String, dynamic>> getData() async {
     http.Response res = await http.get(Uri.parse(this.url));
     int statusCode = res.statusCode;
-    Map decoded;
+    Map<String, dynamic> decoded;
 
     if(statusCode == 200) {
       decoded = jsonDecode(res.body);
