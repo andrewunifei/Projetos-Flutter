@@ -7,6 +7,8 @@ class PriceScreen extends StatefulWidget {
 }
 
 class _PriceScreenState extends State<PriceScreen> {
+  String selectedCurrency = 'USD';
+
   List<DropdownMenuItem> getData(){
     List<DropdownMenuItem<String>> dropDownItems = [];
 
@@ -24,8 +26,6 @@ class _PriceScreenState extends State<PriceScreen> {
 
   @override
   Widget build(BuildContext context) {
-    String selectedCurrency = 'USD';
-
     return Scaffold(
       appBar: AppBar(
         title: Text('🤑 Coin Ticker'),
