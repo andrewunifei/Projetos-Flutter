@@ -1,3 +1,5 @@
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
 const List<String> currenciesList = [
   'AUD',
   'BRL',
@@ -29,3 +31,5 @@ const List<String> cryptoList = [
 ];
 
 class CoinData {}
+
+final String url = 'https://rest.coinapi.io/v1/exchangerate/BTC/USD?apikey=${dotenv.env['APIKEY']}';
