@@ -29,6 +29,13 @@
             {
               "client_id": "400150137691-spsp36venfcggim15mq6rbpj14i5ljlp.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "400150137691-2ld0iemai7gulvpbpt049kv4jusos87a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "co.appbrewery.flashChat"
+              }
             }
           ]
         }
