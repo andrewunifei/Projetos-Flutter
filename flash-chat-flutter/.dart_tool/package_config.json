@@ -164,6 +164,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "modal_progress_hud_nsn",
+      "rootUri": "file:///Users/andrew/Development/flutter/.pub-cache/hosted/pub.dartlang.org/modal_progress_hud_nsn-0.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "path",
       "rootUri": "file:///Users/andrew/Development/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.2",
       "packageUri": "lib/",
@@ -233,10 +239,10 @@
       "name": "flash_chat",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.18"
     }
   ],
-  "generated": "2023-01-05T22:28:33.720077Z",
+  "generated": "2023-01-05T23:00:06.837287Z",
   "generator": "pub",
   "generatorVersion": "2.18.1"
 }
