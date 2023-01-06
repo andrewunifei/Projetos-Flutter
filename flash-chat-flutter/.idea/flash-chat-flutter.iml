@@ -24,6 +24,12 @@
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/cloud_firestore/example/build" />
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/cloud_firestore/example/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/cloud_firestore/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/modal_progress_hud_nsn/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/modal_progress_hud_nsn/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/modal_progress_hud_nsn/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/modal_progress_hud_nsn/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/modal_progress_hud_nsn/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/modal_progress_hud_nsn/example/.pub" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
