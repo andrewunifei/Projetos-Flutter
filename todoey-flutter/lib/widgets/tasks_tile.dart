@@ -1,29 +1,25 @@
 import 'package:flutter/material.dart';
 
-class TaskTile extends StatefulWidget {
+class TaskTile extends StatelessWidget {
+  final String title;
+  final bool? value;
+  final Function(bool?) onChanged;
+
   const TaskTile({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  State<TaskTile> createState() => _TaskTileState();
-}
-
-class _TaskTileState extends State<TaskTile> {
-  bool? value = false;
+    super.key,
+    required this.title,
+    required this.value,
+    required this.onChanged
+  });
 
   @override
   Widget build(BuildContext context) {
     return CheckboxListTile(
       value: value,
-      onChanged: (bool? toggle){
-         setState(() {
-           value = toggle;
-         });
-      },
+      onChanged: onChanged,
       activeColor: Colors.lightBlueAccent,
       title: Text(
-          'Testando em um pão épico!',
+          title,
           style: TextStyle(
               decoration: value != null && value == true ? TextDecoration.lineThrough : TextDecoration.none
           ),
