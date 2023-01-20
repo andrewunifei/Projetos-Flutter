@@ -1,20 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:todoey_flutter/provider/provider_controller.dart';
 import 'package:todoey_flutter/widgets/tasks_list.dart';
 import 'package:todoey_flutter/screens/add_task_screen.dart';
-import 'package:todoey_flutter/models/task.dart';
+import 'package:todoey_flutter/provider/provider_controller.dart';
 import 'package:provider/provider.dart';
 
-class TasksScreen extends StatefulWidget {
+class TasksScreen extends StatelessWidget {
   const TasksScreen({Key? key}) : super(key: key);
-
-  @override
-  State<TasksScreen> createState() => _TasksScreenState();
-}
-
-class _TasksScreenState extends State<TasksScreen> {
-  // List<Task> tasks = [];
-  final inputController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -28,16 +19,7 @@ class _TasksScreenState extends State<TasksScreen> {
                 builder: (context) => SingleChildScrollView(
                     child:Container(
                       padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
-                      child: AddTaskScreen(
-                        // tasks: tasks,
-                        inputController: inputController,
-                        // addCallBack: (title){
-                        //   setState(() {
-                        //     tasks.add(Task(title: title));
-                        //   });
-                        //  Navigator.pop(context);
-                        //},
-                      ),
+                      child: AddTaskScreen(),
                     )
                 )
             );
@@ -74,7 +56,7 @@ class _TasksScreenState extends State<TasksScreen> {
                     ),
                   ),
                   Text(
-                    '${context.watch<ProviderController>().tasks.length} tasks',
+                    '${context.watch<ProviderController>().taskListLength} tasks',
                     style: const TextStyle(
                       color: Colors.white,
                       fontSize: 18.0
@@ -90,9 +72,7 @@ class _TasksScreenState extends State<TasksScreen> {
                   color: Colors.white,
                   borderRadius: BorderRadius.only(topLeft: Radius.circular(20.0), topRight: Radius.circular(20.0))
                 ),
-                child: TodoList(
-                  tasks: context.watch<ProviderController>().tasks,
-                ),
+                child: const TodoList(),
               ),
             ),
           ],
