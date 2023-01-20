@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:todoey_flutter/models/task.dart';
+import 'package:todoey_flutter/provider/provider_controller.dart';
+import 'package:provider/provider.dart';
 
 class AddTaskScreen extends StatelessWidget {
-  final List<Task> tasks;
+  // final List<Task> tasks;
   final TextEditingController inputController;
-  final Function addCallBack;
+  // final Function addCallBack;
   
   const AddTaskScreen({
     Key? key,
-    required this.tasks,
+    // required this.tasks,
     required this.inputController,
-    required this.addCallBack,
+    // required this.addCallBack,
   }) : super(key: key);
 
   @override
@@ -47,9 +49,7 @@ class AddTaskScreen extends StatelessWidget {
                 height: 10.0,
               ),
               TextButton(
-                onPressed: (){
-                  addCallBack(inputController.text);
-                },
+                onPressed: () => context.read<ProviderController>().addTask(inputController.text),
                 style: ButtonStyle(
                   side: MaterialStateProperty.all(
                     const BorderSide(width: 1, color: Colors.lightBlueAccent)
